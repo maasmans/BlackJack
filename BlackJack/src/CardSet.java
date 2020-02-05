@@ -32,9 +32,9 @@ public class CardSet{
 
 	}
 
-	public void textShowCard(int x) { // laat kaart positie x zien in kaart deck
+	public String getCard(int x) { // laat kaart positie x zien in kaart deck
 		String[] kaart = cardSet.get(x);
-		System.out.println("De kaart is een " + kaart[1] + " " + kaart[0]);
+		return kaart[1] + " " + kaart[0];
 	}
 	// input bijvoorbeeld String[] kaart = { "2", "harten")
 	public int getPointsOfCard(String[] kaart) {
